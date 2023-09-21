@@ -121,27 +121,27 @@ public class Int101Homework01 {
          * each method of "Person" and "BankAccount" objects.
          */
         Person person = new Person(65);
-        Person person_2 = new Person(77);
+        Person person2 = new Person(77);
 
-        BankAccount account_1 = new BankAccount(66065, person);
-        BankAccount account_2 = new BankAccount(65077, person_2);
-        account_1.deposit(1000.2);
-        account_2.deposit(2000.3);
+        BankAccount account1 = new BankAccount(66065, person);
+        BankAccount account2 = new BankAccount(65077, person2);
+        account1.deposit(1000.2);
+        account2.deposit(2000.3);
 
-        account_1.withdraw(100);
-        account_2.withdraw(200);
+        account1.withdraw(100);
+        account2.withdraw(200);
 
-        account_2.transfer(110.8, account_1);
+        account2.transfer(110.8, account1);
 
         //Account 1
-        System.out.println("Account Owner: " + account_1.getOwner());
-        System.out.println("Account Number: " + account_1);
-        System.out.println("Account Balance: " + account_1.getBalance());
+        System.out.println("Account Owner: " + account1.getOwner());
+        System.out.println("Account Number: " + account1);
+        System.out.println("Account Balance: " + account1.getBalance());
         System.out.println("");
 
         // Account 2
-        System.out.println("Account Owner: " + account_2.getOwner());
-        System.out.println("Account Number: " + account_2);
-        System.out.println("Account Balance: " + account_2.getBalance());
+        System.out.println("Account Owner: " + account2.getOwner());
+        System.out.println("Account Number: " + account2);
+        System.out.println("Account Balance: " + account2.getBalance());
     }
 }

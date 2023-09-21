@@ -120,10 +120,10 @@ public class Int101Homework01 {
          * 4.3 Show in this "work04UseOfObjectClass" method how to use
          * each method of "Person" and "BankAccount" objects.
          */
-        Person person = new Person(65);
+        Person person1 = new Person(65);
         Person person2 = new Person(77);
 
-        BankAccount account1 = new BankAccount(66065, person);
+        BankAccount account1 = new BankAccount(66065, person1);
         BankAccount account2 = new BankAccount(65077, person2);
         account1.deposit(1000.2);
         account2.deposit(2000.3);

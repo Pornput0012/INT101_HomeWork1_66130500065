@@ -17,15 +17,11 @@ public class Account {
         this.owner = owner;
         this.balance = 0.0;
 
-        long result = 0;
-        while (result == 10) {
-            result = Utilitor.computeIsbn10(nextNo);
-            if (result == 10) {
-                nextNo++;
-            }
+        long result = Utilitor.computeIsbn10(nextNo);
+        while (result != 10) {
+            result = Utilitor.computeIsbn10(++nextNo);
         }
-        this.no = 10 * nextNo + result;
-        nextNo++;
+        this.no = 10 * nextNo++ + result;
     }
 
     public long getNo() {
